@@ -14,7 +14,6 @@ function setMovieData(movieIndex, moviePrice) {
     localStorage.setItem('selectedMoviePrice', moviePrice);
 }
 
-
 // Update total and count
 function updateSelectedCount() {
     const selectedSeats = document.querySelectorAll('.row .seat.selected');
@@ -54,7 +53,6 @@ movieSelect.addEventListener('change', e => {
     setMovieData(e.target.selectedIndex, e.target.value);
     updateSelectedCount();
 })
-
 
 // Seat click event
 container.addEventListener('click', e => {
